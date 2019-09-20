@@ -8,7 +8,7 @@ const MoveTo = (() => {
     tolerance: 0,
     duration: 800,
     easing: 'easeOutQuart',
-    container: window,
+    container: typeof window !== 'undefined' ? window : null,
     callback: function() {},
   };
 
